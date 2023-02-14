@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+:root {
+    --main-color: #305497;
+    --second-color: #0B0A07;
+    --third-color: #247B7B;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--main-color);
+    overflow-x: hidden;
+}
+
+header {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    zoom: 3;
+    color: var(--second-color);
+}
+
+h1 {
+    color: rgb(238, 238, 238);
+    
+}
+
+main {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    zoom: 3;
+}
+
+.inputNumeros {
+    background-color: white;
+    border: 1px solid black;
+    height: 1.8rem;
+    width: 17rem;
+    margin: 1.5rem;
+    color: var(--second-color);
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+
+#binario {
+    text-indent: 0.5rem;
+}
+
+#decimal {
+    text-indent: 0.5rem;
+}
+
+#botaoCalculo {
+    height: 2rem;
+    width: 17rem;
+    color: var(--second-color);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+    header {
+        zoom: 2;
+    }
+
+    main {
+        zoom: 2;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    header {
+        zoom: 1.5;
+    }
+
+    main {
+        zoom: 1.5;
+    }
+}
+
+@media screen and (max-height: 420px) {
+
+}
